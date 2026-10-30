@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "description": "A reproducible benchmark for AI-driven production incident diagnosis and repair.",
-  "license": "UNLICENSED",
+  "license": "MIT",
   "engines": {
     "node": ">=20"
   },
