@@ -1,0 +1,19 @@
+{
+  "name": "root-signal",
+  "version": "0.1.0",
+  "private": true,
+  "description": "A reproducible benchmark for AI-driven production incident diagnosis and repair.",
+  "license": "UNLICENSED",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "test": "node --test",
+    "validate:benchmark": "node scripts/validate-benchmark.js"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.0",
+    "@types/node": "^22.0.0"
+  }
+}
