@@ -1,0 +1,43 @@
+{
+  "task_id": "RS-01",
+  "task_version": "0.1.0",
+  "title": "Authentication Regression",
+  "status": "implementation_in_progress",
+  "ecosystem": {
+    "language": "JavaScript",
+    "runtime": "Node.js",
+    "minimum_version": "20"
+  },
+  "entrypoint": "app.mjs",
+  "incident_report": "incident.md",
+  "public_test_command": "npm run test:public",
+  "dependencies": [],
+  "expected_contract": [
+    "accept correctly signed, non-expired HS256 tokens",
+    "reject invalid signatures",
+    "reject expired tokens",
+    "reject malformed tokens without throwing",
+    "reject unsupported algorithms, including none",
+    "preserve valid protected-route behavior"
+  ],
+  "model_workspace_includes": [
+    "README.md",
+    "incident.md",
+    "task.json",
+    "package.json",
+    "app.mjs",
+    "public-tests/"
+  ],
+  "model_workspace_excludes": [
+    "reference repair",
+    "hidden tests",
+    "grader implementation",
+    "scoring internals"
+  ],
+  "validation": {
+    "defective_baseline_reproduced": false,
+    "reference_repair_passes_contract": false,
+    "hidden_grader_independently_validated": false,
+    "sandbox_boundary_validated": false
+  }
+}
