@@ -1,0 +1,12 @@
+{
+  "name": "@root-signal/rs-01-auth-regression",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Synthetic authentication-regression benchmark task for Root Signal",
+  "scripts": {
+    "test:public": "node --test public-tests/*.test.mjs",
+    "start": "node app.mjs"
+  },
+  "engines": { "node": ">=20" }
+}
